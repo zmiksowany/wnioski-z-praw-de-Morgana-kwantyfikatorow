@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wnioski z prawa de Morgana kwantyfikatorów</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .dot-bullet {
+            list-style-type: "• ";
+        }
+        .dash-bullet {
+            margin-left: 20px;
+            list-style-type: "- ";
+        }
+        .example {
+            margin-top: 10px;
+        }
+        .arrow {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Wnioski z prawa de Morgana kwantyfikatorów:</h1>
+
+    <ul class="dot-bullet">
+        <li>prawa de Morgana:</li>
+        <ul class="dash-bullet">
+            <li>∼ (∃x : p(x)) ⇔ ∀x : ∼ p(x)</li>
+            <li>∼ (∀x : p(x)) ⇔ ∃x : ∼ p(x)</li>
+        </ul>
+    </ul>
+
+    <h2>Przykłady:</h2>
+    <div class="example">
+        <p>Zaprzeczeniem zdania:<br>
+        ∀ε > 0 ∃N ∈ N ∀n > N : |an − g| < ε<br>
+        jest<br>
+        ∃ε > 0 ∀N ∈ N ∃n > N : |an − g| ≥ ε</p>
+        
+        <p>Natomiast zaprzeczeniem zdania:<br>
+        ∀ε > 0 ∃δ > 0 : (|x − x0| < δ ⇒ |f(x) − g| < ε)<br>
+        jest<br>
+        ∃ε > 0 ∀δ > 0 : (|x − x0| < δ ∧ |f(x) − g| ≥ ε)</p>
+    </div>
+
+    <h2>Wnioski:</h2>
+    <p>Zastosowanie prawa de Morgana w tych przypadkach pokazuje, że negację zdań możemy uzyskać poprzez zamianę kwantyfikatorów ∀ <span class="arrow">↔</span> ∃ oraz negację zdań występujących pod tymi kwantyfikatorami.</p>
+
+</body>
+</html>
